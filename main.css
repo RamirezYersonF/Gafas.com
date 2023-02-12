@@ -1,0 +1,93 @@
+/*Configuracion*/
+:root{
+    --coloronegroclaro: #404258;
+    --colorgrisclaro:#6B728E;
+    --colorblancoosucuro: #EEEEEE;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+    --webkit-scroll-behavior: smooth;
+}
+html{
+    font-size: 62.5%;
+    list-style: none;
+}
+div img{
+    width: 70px;
+    cursor: pointer;
+}
+#icono__menu{
+    width: 40px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/*DESKTOP Y MOBILE*/
+header{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 5px var(--colorblancoosucuro);
+}
+header .contenedor__main--header{
+    max-width: 980px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    padding: 0 10px;
+}
+header .contenedor__imglogo--header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header .contenedor__imglogo--header h3{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.contenedor__mobile--nav{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: var(--coloronegroclaro);
+    transform: translateY(-100vh);
+    transition: all 0.5s ease-in-out;
+    
+}
+.contenedor__cerrar--mobile{
+    max-width: 980px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    padding: 0 10px;
+}
+nav .ul__nav--mobile{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    font-size: 1.7rem;
+}
+/*CODIGO JS EN CSS DESKTOP Y MOBILE*/
+
+.activar__menu--js{
+    display: block ;
+    transform: translateY(0vh);
+    transition: all 0.5s ease-in-out;
+}
