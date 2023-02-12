@@ -52,7 +52,6 @@ header .contenedor__imglogo--header h3{
     font-weight: 400;
 }
 .contenedor__mobile--nav{
-    display: none;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -61,6 +60,7 @@ header .contenedor__imglogo--header h3{
     background-color: var(--coloronegroclaro);
     transform: translateY(-100vh);
     transition: all 0.5s ease-in-out;
+    z-index: 100;
     
 }
 .contenedor__cerrar--mobile{
@@ -82,12 +82,12 @@ nav .ul__nav--mobile{
     justify-content: center;
     text-align: center;
     gap: 40px;
-    font-size: 1.7rem;
+    font-size: 2rem;
+    font-weight: 700;
 }
 /*CODIGO JS EN CSS DESKTOP Y MOBILE*/
 
 .activar__menu--js{
-    display: block ;
     transform: translateY(0vh);
     transition: all 0.5s ease-in-out;
 }

@@ -1,9 +1,10 @@
 const menuabrir = document.querySelector(".contenedor__imgMenu");
-const menucerrar = document.querySelector(".contenedor__mobile--nav");
+const menumostrar = document.querySelector(".contenedor__mobile--nav");
+const menucerrar = document.querySelector(".img__menucerrar--nav");
 
 menuabrir.addEventListener('click',toggleManue)
 menucerrar.addEventListener('click', toggleManue)
 
 function  toggleManue(params) {
-   menucerrar.classList.toggle("activar__menu--js");   
+   menumostrar.classList.toggle("activar__menu--js");   
 };
